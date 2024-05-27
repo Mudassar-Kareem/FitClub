@@ -1,0 +1,255 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-l{
+    flex: 3; 
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+
+
+.hero
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #424141;
+    margin-top: 4rem;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    color: aliceblue;   
+    text-transform: uppercase;
+    position: relative;
+}
+.add>span{
+    z-index: 2;
+}
+.add>div{
+    position: absolute;
+    background-color: var(--orange);
+    border-radius: 3rem;
+    left: 8px;
+    height: 80%;
+    width: 5.4rem;
+    z-index: 1;
+    
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+    gap: 1.5rem;
+    text-overflow: inherit;
+}
+.text>div:nth-child(3){
+    font-size: 1.1rem;
+    font-weight: 200;
+    text-transform: none;
+    width: 88%;
+    letter-spacing: 1px;
+
+}
+.figures{
+    display: flex;
+  
+    gap: 2rem;
+    text-transform: uppercase;
+}  
+.figures>div{
+    display: flex;
+     flex-direction: column;  
+    color: var(--gray);
+}
+.w{
+    font-weight: bold;
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+    flex-direction: row;
+}
+.buttons>:nth-child(1){
+    color: aliceblue;
+    background-color: var(--orange);
+    border: 4px solid var(--orange);
+    width: 8rem;
+}
+.buttons>:nth-child(2){
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    width: 8rem;
+}
+
+.hero-r{
+    
+    flex:1 ; 
+    position: relative;
+    background-color: var(--orange);
+}
+.hero-r .btn{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    color: black;
+}
+.heart{
+    position: absolute;
+    background-color: #464D53;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 0.5rem;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    right:4rem ;
+    top: 8rem;
+}
+.heart span:nth-of-type(1){
+    color: var(--gray);
+    letter-spacing: 1px;
+}
+.heart span:nth-of-type(2){
+    color: aliceblue;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.heart img{
+    width: 2rem;
+}
+.hero-img{
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+.hero-img-back{
+    position: absolute;
+    top: 5rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+    
+}
+.calo{
+    display: flex;
+    position: absolute;
+    background-color: #464D53;
+    gap: 2rem;
+     width: fit-content; 
+    border-radius: 5px;
+    top: 33rem;
+    right: 28rem;
+    padding: 1rem;
+
+}
+.calo img{
+    width: 3rem;
+}
+.calo div{
+     display: flex; 
+     flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 1rem;
+
+   
+  
+}
+.calo div span:nth-child(1){
+    color: var(--gray);
+    letter-spacing: 2px;
+    
+}
+.calo div span:nth-child(2){
+    color: aliceblue;
+    font-weight: bold;
+    
+    
+}
+.blur-h{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+@media screen and (max-width:768px) {
+    .hero{
+        flex-direction: column;
+    }
+    .blur-h{
+        width: 14rem;
+    }
+    .add{
+        
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .text{
+        font-size: xx-large;
+        justify-content: center;
+        align-items: center;
+    }
+    .text>div:nth-child(3){
+        text-align: center;
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .figures>div>span:nth-child(1){
+        font-size: large;
+    }
+    .figures > div > span:nth-child(2){
+        font-size: small;
+    }
+    .hero-r{
+        position: relative;
+        background: none ;
+    }
+    .heart{
+        left: 1rem;
+        top: 2rem;
+    }
+    .calo{
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+    }
+    .calo>img{
+        width: 2rem;
+    }
+    .calo > div >:nth-child(2){
+        color: aliceblue;
+        font-size: 1rem;
+    }
+    .hero-img{
+        position: relative;
+        width: 15rem;
+        top: 4rem;
+        left: 7rem;
+        align-self: center;
+    }
+    .hero-img-back{
+        width: 15rem;
+        top: 0;
+        left: 2rem;
+    }
+}
